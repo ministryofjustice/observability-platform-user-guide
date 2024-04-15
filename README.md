@@ -7,7 +7,7 @@
 
 ## About this repository
 
-This is the user guide for Ministry of Justice Observability Platform.
+This is the user guide for the Ministry of Justice's Observability Platform.
 
 ### Contributing
 
