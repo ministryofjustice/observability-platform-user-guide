@@ -1,0 +1,21 @@
+---
+collapsible_nav: true
+default_owner_slack: "#observability-platform"
+enable_search: true
+full_service_name: Observability Platform User Guide
+github_branch: main
+github_repo: ministryofjustice/observability-platform
+header_links:
+  GitHub: https://github.com/ministryofjustice/observability-platform-user-guide
+  Slack: https://moj.enterprise.slack.com/archives/C05P1RUV0UD
+host: https://user-guide.observability-platform.service.justice.gov.uk
+max_toc_heading_level: 3
+owner_slack_workspace: mojdt
+phase: prototype
+prevent_indexing: true
+service_link: /
+service_name: Observability Platform User Guide
+show_contribution_banner: true
+show_expiry: true
+show_govuk_logo: false
+show_review_banner: true
