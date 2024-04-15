@@ -7,7 +7,7 @@ github_branch: main
 github_repo: ministryofjustice/observability-platform
 header_links:
   GitHub: https://github.com/ministryofjustice/observability-platform-user-guide
-  Slack: https://moj.enterprise.slack.com/archives/C05P1RUV0UD
+  Slack: https://moj.enterprise.slack.com/archives/C05QXHR697S
 host: https://user-guide.observability-platform.service.justice.gov.uk
 max_toc_heading_level: 3
 owner_slack_workspace: mojdt
