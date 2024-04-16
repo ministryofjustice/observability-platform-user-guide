@@ -2,6 +2,8 @@
 collapsible_nav: true
 default_owner_slack: "#observability-platform"
 enable_search: true
+footer_links:
+  Platform Status: https://status.observability-platform.service.justice.gov.uk
 full_service_name: Observability Platform User Guide
 github_branch: main
 github_repo: ministryofjustice/observability-platform
