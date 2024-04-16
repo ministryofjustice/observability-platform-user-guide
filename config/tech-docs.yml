@@ -7,14 +7,14 @@ footer_links:
   Status: https://status.observability-platform.service.justice.gov.uk
 full_service_name: Observability Platform User Guide
 github_branch: main
-github_repo: ministryofjustice/observability-platform
+github_repo: ministryofjustice/observability-platform-user-guide
 header_links:
   Slack: https://moj.enterprise.slack.com/archives/C05QXHR697S
   Status: https://status.observability-platform.service.justice.gov.uk
 host: https://user-guide.observability-platform.service.justice.gov.uk
 max_toc_heading_level: 3
 owner_slack_workspace: mojdt
-phase: prototype
+phase: discovery
 prevent_indexing: true
 service_link: /
 service_name: Observability Platform User Guide

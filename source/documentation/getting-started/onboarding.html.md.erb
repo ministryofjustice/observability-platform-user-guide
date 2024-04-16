@@ -33,9 +33,29 @@ Once onboarding has been agreed with the Observability Platform team, you will n
 
 * Optionally any Slack channels
 
+## Deploying Observability Platform Terraform Module
+
+To access Amazon CloudWatch and X-Ray in your accoumt, the Observability Platform team have created a Terraform module to create the required resources.
+
+Documentation for this module can be found on the [Terraform Registry](https://registry.terraform.io/modules/ministryofjustice/observability-platform-tenant/aws/latest).
+
+An example of using this module can be found below:
+
+```hcl
+module "observability_platform_tenant" {
+  source  = "ministryofjustice/observability-platform-tenant/aws"
+  version = "1.0.0"
+
+  enable_xray                       = true
+  observability_platform_account_id = local.environment_management.account_ids["observability-platform-production"]
+
+  tags = local.tags
+}
+```
+
 ## Creating a PagerDuty Integration
 
-See [PagerDuty's documentation](https://developer.pagerduty.com/docs/ZG9jOjExMDI5NTgw-events-api-v2-overview#getting-started) for creating an `Events API v2` integration.
+Please refer to [PagerDuty's documentation](https://developer.pagerduty.com/docs/ZG9jOjExMDI5NTgw-events-api-v2-overview#getting-started) for creating an `Events API v2` integration.
 
 ## Configuring Observability Platform's Slack Bot
 
