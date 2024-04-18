@@ -1,0 +1,6 @@
+{
+  "absolute": true,
+  "ignore": ["**/.github/workflows/build-test.yml"],
+  "reporters": ["consoleFull"],
+  "threshold": 0
+}
