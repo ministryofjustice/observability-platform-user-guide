@@ -1,6 +1,6 @@
 ---
 title: Onboarding to Observability Platform
-last_reviewed_on: 2024-04-15
+last_reviewed_on: 2024-06-28
 review_in: 3 months
 weight: 0
 ---
@@ -27,11 +27,13 @@ Once onboarding has been agreed with the Observability Platform team, you will n
 
   * Amazon X-Ray is enabled or disabled
 
-  * Prometheus push is enabled or disabled
+  * Amazon Managed Service for Prometheus is enabled or disabled
 
-* Optionally any PagerDuty integrations keys
+* Optionally:
 
-* Optionally any Slack channels
+  * any PagerDuty integrations keys
+
+  * any Slack channels
 
 ## Deploying Observability Platform Terraform Module
 
@@ -44,10 +46,9 @@ An example of using this module can be found below:
 ```hcl
 module "observability_platform_tenant" {
   source  = "ministryofjustice/observability-platform-tenant/aws"
-  version = "1.0.0"
+  version = "<see https://registry.terraform.io/modules/ministryofjustice/observability-platform-tenant/aws/latest for latest>"
 
-  enable_xray                       = true
-  observability_platform_account_id = local.environment_management.account_ids["observability-platform-production"]
+  observability_platform_account_id = local.environment_management.account_ids["observability-platform-${ENVIRONMENT}"]
 
   tags = local.tags
 }
