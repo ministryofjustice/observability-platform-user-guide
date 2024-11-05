@@ -1,6 +1,6 @@
 ---
 title: Onboarding to Observability Platform
-last_reviewed_on: 2024-06-28
+last_reviewed_on: 2024-11-04
 review_in: 3 months
 weight: 0
 ---
@@ -48,7 +48,7 @@ module "observability_platform_tenant" {
   source  = "ministryofjustice/observability-platform-tenant/aws"
   version = "<see https://registry.terraform.io/modules/ministryofjustice/observability-platform-tenant/aws/latest for latest>"
 
-  observability_platform_account_id = local.environment_management.account_ids["observability-platform-${ENVIRONMENT}"]
+  observability_platform_account_id = local.environment_management.account_ids["observability-platform-production"]
 
   tags = local.tags
 }
