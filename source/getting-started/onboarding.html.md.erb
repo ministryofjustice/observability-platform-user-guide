@@ -1,6 +1,6 @@
 ---
-title: Onboarding to Observability Platform
-last_reviewed_on: 2024-06-28
+title: Onboarding to the Observability Platform
+last_reviewed_on: 2024-12-04
 review_in: 3 months
 weight: 0
 ---
@@ -19,7 +19,7 @@ Once onboarding has been agreed with the Observability Platform team, you will n
 
 * Tenant name (e.g. `Observability Platform`)
 
-* GitHub team (e.g. `observability-platform`)
+* AWS IAM Identity Center team (e.g. `observability-platform`)
 
 * AWS accounts and whether
 
@@ -35,7 +35,7 @@ Once onboarding has been agreed with the Observability Platform team, you will n
 
   * any Slack channels
 
-## Deploying Observability Platform Terraform Module
+## Deploying Observability Platform's Terraform Module
 
 To access Amazon CloudWatch and X-Ray in your account, the Observability Platform team have created a Terraform module to create the required resources.
 
@@ -48,7 +48,7 @@ module "observability_platform_tenant" {
   source  = "ministryofjustice/observability-platform-tenant/aws"
   version = "<see https://registry.terraform.io/modules/ministryofjustice/observability-platform-tenant/aws/latest for latest>"
 
-  observability_platform_account_id = local.environment_management.account_ids["observability-platform-${ENVIRONMENT}"]
+  observability_platform_account_id = local.environment_management.account_ids["observability-platform-production"]
 
   tags = local.tags
 }
