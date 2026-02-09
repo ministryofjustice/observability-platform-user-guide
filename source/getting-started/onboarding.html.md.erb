@@ -17,23 +17,21 @@ Please reach out via [#ask-observability-platform](https://moj.enterprise.slack.
 
 Once onboarding has been agreed with the Observability Platform team, you will need to provide the following information:
 
-* Tenant name (e.g. `Observability Platform`)
+- Tenant name (e.g. `Observability Platform`)
 
-* AWS IAM Identity Center team (e.g. `observability-platform`)
+- AWS IAM Identity Center team (e.g. `observability-platform`)
 
-* AWS accounts and whether
+- AWS accounts and whether
+  - Amazon CloudWatch is enabled or disabled
 
-  * Amazon CloudWatch is enabled or disabled
+  - Amazon X-Ray is enabled or disabled
 
-  * Amazon X-Ray is enabled or disabled
+  - Athena is enabled or disabled (configuration will be required if true)
 
-  * Athena is enabled or disabled (configuration will be required if true)
+- Optionally:
+  - any PagerDuty integrations keys
 
-* Optionally:
-
-  * any PagerDuty integrations keys
-
-  * any Slack channels
+  - any Slack channels
 
 ## Deploying Observability Platform's Terraform Module
 
@@ -60,4 +58,4 @@ Please refer to [PagerDuty's documentation](https://developer.pagerduty.com/docs
 
 ## Configuring Observability Platform's Slack Bot
 
-To recieve alerts to a Slack channel, you will need to invite `@observabilityplatform`.
+To receive alerts to a Slack channel, you will need to invite `@observabilityplatform`.
